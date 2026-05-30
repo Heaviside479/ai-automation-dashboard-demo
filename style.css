@@ -692,4 +692,27 @@ h3 {
     height: 190px;
     gap: 10px;
   }
+
+.task-card.selected {
+  border-color: rgba(56, 189, 248, 0.7);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.16);
 }
+
+.bar-animate {
+  animation: growBar 0.9s ease both;
+  transform-origin: bottom;
+}
+
+@keyframes growBar {
+  from {
+    transform: scaleY(0.2);
+    opacity: 0.4;
+  }
+
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+
