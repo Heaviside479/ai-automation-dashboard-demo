@@ -1,11 +1,12 @@
-````md
 # ⚡ FlowPilot AI
 
-## AI Automation Dashboard Demo
+## AI Workflow Generator
 
-FlowPilot AI is a modern AI automation dashboard concept designed to demonstrate how businesses can monitor workflows, automate repetitive processes and gain valuable operational insights through a professional software interface.
+FlowPilot AI is an interactive workflow automation generator designed to help businesses identify automation opportunities and create structured workflow concepts.
 
-This project was created as a portfolio showcase by **Heaviside Solutions**.
+This project demonstrates how digital processes can be analyzed and transformed into automation plans through a modern software-style interface.
+
+Created as a portfolio project by **Heaviside Solutions**.
 
 ---
 
@@ -17,53 +18,134 @@ https://heaviside479.github.io/ai-automation-dashboard-demo/
 
 ---
 
-## 🎯 Project Purpose
+## 🎯 Project Overview
 
-The goal of this project is to demonstrate:
+FlowPilot AI allows users to:
 
-- Modern SaaS-style user interfaces
-- AI automation dashboard design
-- Workflow management concepts
-- Data visualization components
-- Responsive web development
-- Professional business software layouts
-- User-focused dashboard experiences
+- Select an industry
+- Choose a business process
+- Define an automation goal
+- Generate a workflow concept
+- Discover automation opportunities
+- Estimate business impact
 
-FlowPilot AI is a fictional platform created for demonstration and portfolio purposes.
+The application creates structured workflow recommendations based on user input and demonstrates how automation planning tools can support digital transformation initiatives.
 
 ---
 
 ## ✨ Features
 
-### 📊 Dashboard Overview
-- KPI cards
-- Performance metrics
-- Workflow statistics
-- Business intelligence overview
+### ⚡ Workflow Generator
 
-### ⚙️ Workflow Management
-- Automation status indicators
-- Workflow monitoring
-- Progress tracking
-- Process visualization
+Generate automation concepts based on:
 
-### 🤖 AI Task Center
-- AI-powered task overview
-- Task queues
-- Active automation monitoring
-- Workflow status tracking
+- Industry
+- Business Process
+- Automation Goal
+- Custom User Input
 
-### 📈 Analytics
-- Automation performance insights
-- Productivity visualization
-- Business impact metrics
-- Reporting concepts
+---
+
+### 📋 Generated Workflow Plans
+
+The application automatically creates:
+
+- Process workflows
+- Automation recommendations
+- Suggested implementation steps
+- Operational improvements
+
+---
+
+### 📊 Automation Insights
+
+Generated results include:
+
+- Automation potential
+- Estimated time savings
+- Workflow complexity
+- Business benefits
+
+---
+
+### 🛠 Tool Recommendations
+
+Suggested technologies include:
+
+- OpenAI
+- Zapier
+- Make
+- HubSpot
+- Airtable
+- Google Workspace
+- CRM Systems
+
+---
 
 ### 📱 Responsive Design
-- Desktop optimized
-- Tablet optimized
-- Mobile friendly
-- Modern responsive layout
+
+Optimized for:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile Devices
+
+---
+
+## 🖥 Screens Included
+
+### Landing Page
+
+Modern SaaS-inspired homepage introducing workflow automation concepts.
+
+### Workflow Generator
+
+Interactive form for creating automation plans.
+
+### Automation Results
+
+Dynamic result area displaying:
+
+- Workflow Steps
+- Suggested Tools
+- Business Benefits
+- Automation Score
+- Time Savings
+
+---
+
+## 💼 Example Use Cases
+
+### Real Estate
+
+- Lead Qualification
+- Property Inquiry Handling
+- Follow-Up Automation
+
+### Restaurants
+
+- Reservation Management
+- Customer Communication
+- Review Monitoring
+
+### Consulting
+
+- Client Onboarding
+- Proposal Generation
+- Meeting Summaries
+
+### E-Commerce
+
+- Customer Support
+- Order Processing
+- Marketing Automation
+
+### Healthcare
+
+- Appointment Management
+- Patient Communication
+- Document Processing
 
 ---
 
@@ -77,7 +159,9 @@ FlowPilot AI is a fictional platform created for demonstration and portfolio pur
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-### Hosting
+---
+
+### Deployment
 
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?style=for-the-badge&logo=github&logoColor=white)
 
@@ -95,45 +179,45 @@ ai-automation-dashboard-demo/
 
 ---
 
-## 💡 Business Use Cases
-
-FlowPilot AI demonstrates how automation platforms can help organizations:
-
-* Reduce manual work
-* Increase operational efficiency
-* Monitor business processes
-* Improve reporting
-* Manage AI workflows
-* Scale automation initiatives
-* Track automation performance
-
----
-
-## 🎨 Design Goals
-
-The interface was designed with a focus on:
-
-* Clean SaaS aesthetics
-* Professional business presentation
-* Modern dark UI
-* Accessibility
-* Readability
-* Visual hierarchy
-* Responsive user experience
-
----
-
 ## 📈 Portfolio Value
 
 This project demonstrates skills in:
 
 * Frontend Development
-* Responsive Design
-* Dashboard UI Design
-* SaaS Product Design
-* Business Software Interfaces
+* Software Interface Design
+* Workflow Automation Concepts
+* Business Process Analysis
+* Responsive Web Design
 * User Experience Design
-* Professional Project Structuring
+* Interactive JavaScript Development
+* SaaS Dashboard Design
+
+---
+
+## 🎨 Design Goals
+
+The interface focuses on:
+
+* Modern SaaS aesthetics
+* Professional software presentation
+* Clean visual hierarchy
+* High readability
+* Business-oriented UX
+* Responsive layouts
+
+---
+
+## 🔮 Future Expansion
+
+Potential future versions could include:
+
+* Real AI integration
+* OpenAI API support
+* Workflow export functionality
+* PDF report generation
+* CRM integration
+* Multi-user dashboards
+* Authentication systems
 
 ---
 
@@ -163,21 +247,21 @@ https://www.linkedin.com/in/christopher-heaviside-8a2930412/
 
 ## 📄 License
 
-This project was created for portfolio and demonstration purposes.
+This project was created for educational, portfolio and demonstration purposes.
 
 ---
 
-## ⭐ About This Project
+## ⭐ About
 
-FlowPilot AI is part of a growing portfolio of professional showcase projects covering:
+FlowPilot AI is part of a growing portfolio of projects focused on:
 
 * Web Development
-* Business Websites
-* AI Automation Solutions
-* Dashboard Interfaces
-* Digital Transformation Concepts
+* AI Concepts
+* Workflow Automation
+* Business Software
+* Digital Transformation
+* Modern User Interfaces
 
-More projects are coming soon.
+More projects are currently in development.
 
-```
-```
+
