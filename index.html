@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>FlowPilot AI | Workflow Generator Demo</title>
+  <title>FlowPilot AI | Automatisierungsplan Generator</title>
 
   <meta
     name="description"
-    content="FlowPilot AI is an interactive workflow generator demo that creates automation ideas, workflow steps and business efficiency suggestions."
+    content="FlowPilot AI ist ein interaktiver Workflow-Generator, der Automatisierungsideen, Prozessabläufe und Effizienzpotenziale für Unternehmen erstellt."
   />
 
   <link rel="stylesheet" href="style.css" />
@@ -22,16 +22,17 @@
       FlowPilot AI
     </a>
 
-    <button class="menu-toggle" aria-label="Open navigation">
+    <button class="menu-toggle" aria-label="Navigation öffnen">
       ☰
     </button>
 
     <nav class="nav-links">
       <a href="#generator">Generator</a>
-      <a href="#features">Features</a>
-      <a href="#examples">Examples</a>
-      <a href="#value">Business Value</a>
+      <a href="#features">Funktionen</a>
+      <a href="#examples">Beispiele</a>
+      <a href="#value">Nutzen</a>
       <a href="#contact" class="nav-cta">Heaviside Solutions</a>
+      <a href="en/" class="language-link">EN</a>
     </nav>
   </header>
 
@@ -39,25 +40,26 @@
 
     <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow">AI Workflow Generator Demo</p>
+        <p class="eyebrow">KI Workflow Generator Demo</p>
 
-        <h1>Turn Business Processes Into Automation Plans</h1>
+        <h1>Geschäftsprozesse in Automatisierungspläne verwandeln</h1>
 
         <p class="hero-text">
-          FlowPilot AI helps users transform repetitive business tasks into clear
-          automation workflows. Enter your industry, process and goal — then generate
-          a structured automation concept instantly.
+          FlowPilot AI unterstützt Unternehmen dabei, wiederkehrende Aufgaben in
+          klare Automatisierungsabläufe umzuwandeln. Wählen Sie Ihre Branche,
+          Ihren Prozess und Ihr Ziel aus – und erhalten Sie sofort ein strukturiertes
+          Automatisierungskonzept.
         </p>
 
         <div class="hero-actions">
-          <a href="#generator" class="btn primary">Generate Workflow</a>
-          <a href="#examples" class="btn secondary">View Examples</a>
+          <a href="#generator" class="btn primary">Automatisierungsplan erstellen</a>
+          <a href="#examples" class="btn secondary">Beispiele ansehen</a>
         </div>
 
         <div class="trust-row">
-          <span>Workflow Logic</span>
-          <span>Business Automation</span>
-          <span>AI Concept Demo</span>
+          <span>Workflow-Logik</span>
+          <span>Geschäftsautomatisierung</span>
+          <span>KI-Konzept Demo</span>
         </div>
       </div>
 
@@ -65,42 +67,42 @@
         <div class="panel-header">
           <div>
             <span class="status-dot"></span>
-            Generator Preview
+            Generator Vorschau
           </div>
-          <span class="panel-badge">Interactive</span>
+          <span class="panel-badge">Interaktiv</span>
         </div>
 
         <div class="preview-flow">
           <div class="preview-step active">
             <span>01</span>
-            <p>Analyze business process</p>
+            <p>Geschäftsprozess analysieren</p>
           </div>
 
           <div class="preview-step">
             <span>02</span>
-            <p>Identify repetitive tasks</p>
+            <p>Wiederkehrende Aufgaben erkennen</p>
           </div>
 
           <div class="preview-step">
             <span>03</span>
-            <p>Create automation workflow</p>
+            <p>Automatisierungsablauf erstellen</p>
           </div>
 
           <div class="preview-step">
             <span>04</span>
-            <p>Estimate efficiency impact</p>
+            <p>Effizienzpotenzial bewerten</p>
           </div>
         </div>
 
         <div class="preview-metrics">
           <div>
             <strong>85%</strong>
-            <span>Automation Potential</span>
+            <span>Automatisierungspotenzial</span>
           </div>
 
           <div>
             <strong>12h</strong>
-            <span>Weekly Time Saved</span>
+            <span>Zeitersparnis pro Woche</span>
           </div>
         </div>
       </div>
@@ -109,98 +111,99 @@
     <section class="stats-section">
       <div>
         <strong>4</strong>
-        <span>Input Factors</span>
+        <span>Eingabefaktoren</span>
       </div>
 
       <div>
         <strong>6+</strong>
-        <span>Generated Outputs</span>
+        <span>Generierte Ergebnisse</span>
       </div>
 
       <div>
         <strong>100%</strong>
-        <span>Browser-Based Demo</span>
+        <span>Browserbasierte Demo</span>
       </div>
     </section>
 
     <section class="section" id="generator">
       <div class="section-heading center">
         <p class="eyebrow">Workflow Generator</p>
-        <h2>Create Your Automation Plan</h2>
+        <h2>Erstellen Sie Ihren Automatisierungsplan</h2>
         <p>
-          Select your industry, choose a business process and describe your goal.
-          The generator will create a structured workflow concept for your automation idea.
+          Wählen Sie Ihre Branche, einen Geschäftsprozess und Ihr Ziel aus.
+          Der Generator erstellt daraus ein strukturiertes Automatisierungskonzept.
         </p>
       </div>
 
       <div class="generator-layout">
         <form class="generator-form" id="workflowForm" onsubmit="return false;">
           <div class="form-group">
-            <label for="industry">Industry</label>
+            <label for="industry">Branche</label>
             <select id="industry" required>
-              <option value="">Choose an industry</option>
-              <option value="restaurant">Restaurant & Hospitality</option>
-              <option value="realestate">Real Estate</option>
-              <option value="consulting">Consulting</option>
+              <option value="">Branche auswählen</option>
+              <option value="restaurant">Restaurant & Gastronomie</option>
+              <option value="realestate">Immobilien</option>
+              <option value="consulting">Beratung</option>
               <option value="ecommerce">E-Commerce</option>
-              <option value="healthcare">Healthcare</option>
-              <option value="construction">Construction</option>
-              <option value="general">General Business</option>
+              <option value="healthcare">Gesundheitswesen</option>
+              <option value="construction">Bau & Handwerk</option>
+              <option value="general">Allgemeines Unternehmen</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="process">Business Process</label>
+            <label for="process">Geschäftsprozess</label>
             <select id="process" required>
-              <option value="">Choose a process</option>
+              <option value="">Prozess auswählen</option>
               <option value="lead-management">Lead Management</option>
-              <option value="customer-support">Customer Support</option>
-              <option value="document-processing">Document Processing</option>
-              <option value="appointment-booking">Appointment Booking</option>
+              <option value="customer-support">Kundenservice</option>
+              <option value="document-processing">Dokumentenverarbeitung</option>
+              <option value="appointment-booking">Terminbuchung</option>
               <option value="reporting">Reporting</option>
-              <option value="email-workflows">Email Workflows</option>
+              <option value="email-workflows">E-Mail-Workflows</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="goal">Main Goal</label>
+            <label for="goal">Hauptziel</label>
             <select id="goal" required>
-              <option value="">Choose a goal</option>
-              <option value="save-time">Save Time</option>
-              <option value="reduce-errors">Reduce Errors</option>
-              <option value="faster-response">Respond Faster</option>
-              <option value="improve-overview">Improve Overview</option>
-              <option value="scale-operations">Scale Operations</option>
+              <option value="">Ziel auswählen</option>
+              <option value="save-time">Zeit sparen</option>
+              <option value="reduce-errors">Fehler reduzieren</option>
+              <option value="faster-response">Schneller antworten</option>
+              <option value="improve-overview">Überblick verbessern</option>
+              <option value="scale-operations">Abläufe skalieren</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="details">Additional Details</label>
+            <label for="details">Zusätzliche Details</label>
             <textarea
               id="details"
-              placeholder="Example: We receive many customer requests by email and want to answer faster."
+              placeholder="Beispiel: Wir erhalten viele Kundenanfragen per E-Mail und möchten schneller antworten."
             ></textarea>
           </div>
 
           <button type="submit" class="btn primary">
-            Generate Automation Plan
+            Automatisierungsplan generieren
           </button>
         </form>
 
         <div class="result-panel" id="resultPanel">
           <div class="empty-state" id="emptyState">
             <span>⚡</span>
-            <h3>Your workflow plan will appear here</h3>
+            <h3>Ihr Workflow-Plan erscheint hier</h3>
             <p>
-              Fill out the form and generate an automation concept based on your business process.
+              Füllen Sie das Formular aus und generieren Sie ein Automatisierungskonzept
+              passend zu Ihrem Geschäftsprozess.
             </p>
           </div>
 
           <div class="generated-result hidden" id="generatedResult">
             <div class="result-header">
               <div>
-                <p class="eyebrow">Generated Plan</p>
-                <h3 id="resultTitle">Automation Workflow</h3>
+                <p class="eyebrow">Generierter Plan</p>
+                <h3 id="resultTitle">Automatisierungs-Workflow</h3>
               </div>
 
               <span class="score-badge" id="automationScore">85%</span>
@@ -208,28 +211,28 @@
 
             <div class="result-grid">
               <div class="result-card">
-                <span>Estimated Time Saved</span>
-                <strong id="timeSaved">12h / week</strong>
+                <span>Geschätzte Zeitersparnis</span>
+                <strong id="timeSaved">12h / Woche</strong>
               </div>
 
               <div class="result-card">
-                <span>Complexity</span>
-                <strong id="complexity">Medium</strong>
+                <span>Komplexität</span>
+                <strong id="complexity">Mittel</strong>
               </div>
             </div>
 
             <div class="workflow-output">
-              <h4>Recommended Workflow</h4>
+              <h4>Empfohlener Workflow</h4>
               <ol id="workflowSteps"></ol>
             </div>
 
             <div class="tools-output">
-              <h4>Suggested Tools</h4>
+              <h4>Empfohlene Tools</h4>
               <div class="tool-tags" id="toolTags"></div>
             </div>
 
             <div class="benefits-output">
-              <h4>Business Benefits</h4>
+              <h4>Geschäftlicher Nutzen</h4>
               <ul id="benefitList"></ul>
             </div>
           </div>
@@ -239,44 +242,48 @@
 
     <section class="section dark" id="features">
       <div class="section-heading center">
-        <p class="eyebrow">Features</p>
-        <h2>What This Demo Shows</h2>
+        <p class="eyebrow">Funktionen</p>
+        <h2>Was diese Demo zeigt</h2>
         <p>
-          This project demonstrates how a real AI automation tool could guide
-          users from business problem to automation concept.
+          Dieses Projekt zeigt, wie ein echtes KI-Automatisierungstool Nutzer
+          von einem Geschäftsproblem zu einem klaren Automatisierungskonzept führen kann.
         </p>
       </div>
 
       <div class="feature-grid">
         <article class="feature-card">
           <span>🧠</span>
-          <h3>Process Understanding</h3>
+          <h3>Prozessverständnis</h3>
           <p>
-            The app analyzes selected inputs and creates a logical automation structure.
+            Die App verarbeitet die ausgewählten Eingaben und erstellt daraus
+            eine logische Automatisierungsstruktur.
           </p>
         </article>
 
         <article class="feature-card">
           <span>⚙️</span>
-          <h3>Workflow Generation</h3>
+          <h3>Workflow-Erstellung</h3>
           <p>
-            Users receive clear step-by-step workflows based on their selected business process.
+            Nutzer erhalten klare Schritt-für-Schritt-Workflows passend zum
+            ausgewählten Geschäftsprozess.
           </p>
         </article>
 
         <article class="feature-card">
           <span>📊</span>
-          <h3>Impact Estimation</h3>
+          <h3>Potenzialbewertung</h3>
           <p>
-            The tool calculates estimated time savings, complexity and automation potential.
+            Das Tool zeigt geschätzte Zeitersparnis, Komplexität und
+            Automatisierungspotenzial.
           </p>
         </article>
 
         <article class="feature-card">
           <span>🛠️</span>
-          <h3>Tool Suggestions</h3>
+          <h3>Tool-Empfehlungen</h3>
           <p>
-            Suggested tools help users understand what technologies could be used.
+            Vorschläge für passende Technologien helfen dabei, mögliche Lösungen
+            besser zu verstehen.
           </p>
         </article>
       </div>
@@ -284,36 +291,39 @@
 
     <section class="section" id="examples">
       <div class="section-heading">
-        <p class="eyebrow">Example Use Cases</p>
-        <h2>Automation Ideas For Different Businesses</h2>
+        <p class="eyebrow">Anwendungsbeispiele</p>
+        <h2>Automatisierungsideen für verschiedene Unternehmen</h2>
         <p>
-          FlowPilot AI can generate ideas for many business situations where repetitive
-          work slows teams down.
+          FlowPilot AI kann Ideen für viele Geschäftsbereiche erstellen, in denen
+          wiederkehrende Aufgaben Zeit kosten und Prozesse verlangsamen.
         </p>
       </div>
 
       <div class="example-grid">
         <article class="example-card">
           <span>🏠</span>
-          <h3>Real Estate Lead Handling</h3>
+          <h3>Immobilien Lead-Bearbeitung</h3>
           <p>
-            Automatically categorize property inquiries, collect missing details and prepare follow-up emails.
+            Immobilienanfragen automatisch kategorisieren, fehlende Informationen
+            erfassen und Follow-up-E-Mails vorbereiten.
           </p>
         </article>
 
         <article class="example-card">
           <span>🍽️</span>
-          <h3>Restaurant Booking Requests</h3>
+          <h3>Restaurant-Reservierungen</h3>
           <p>
-            Sort reservation requests, confirm availability and send structured responses automatically.
+            Reservierungsanfragen sortieren, Verfügbarkeit prüfen und strukturierte
+            Antworten automatisch vorbereiten.
           </p>
         </article>
 
         <article class="example-card">
           <span>📄</span>
-          <h3>Document Processing</h3>
+          <h3>Dokumentenverarbeitung</h3>
           <p>
-            Extract relevant information from files, summarize content and prepare internal reports.
+            Relevante Informationen aus Dateien extrahieren, Inhalte zusammenfassen
+            und interne Berichte vorbereiten.
           </p>
         </article>
       </div>
@@ -321,32 +331,35 @@
 
     <section class="section dark" id="value">
       <div class="section-heading center">
-        <p class="eyebrow">Business Value</p>
-        <h2>Why Workflow Automation Matters</h2>
+        <p class="eyebrow">Geschäftlicher Nutzen</p>
+        <h2>Warum Workflow-Automatisierung wichtig ist</h2>
       </div>
 
       <div class="value-grid">
         <article class="value-card">
           <strong>01</strong>
-          <h3>Less Manual Work</h3>
+          <h3>Weniger manuelle Arbeit</h3>
           <p>
-            Repetitive tasks can be automated so teams spend more time on valuable work.
+            Wiederkehrende Aufgaben können automatisiert werden, damit Teams mehr
+            Zeit für wertvolle Tätigkeiten haben.
           </p>
         </article>
 
         <article class="value-card">
           <strong>02</strong>
-          <h3>Faster Response Times</h3>
+          <h3>Schnellere Reaktionszeiten</h3>
           <p>
-            Automated workflows help businesses react faster to customers, leads and internal requests.
+            Automatisierte Workflows helfen Unternehmen, schneller auf Kunden,
+            Leads und interne Anfragen zu reagieren.
           </p>
         </article>
 
         <article class="value-card">
           <strong>03</strong>
-          <h3>Better Process Clarity</h3>
+          <h3>Bessere Prozessklarheit</h3>
           <p>
-            Clear workflow plans make it easier to understand what should be automated first.
+            Klare Workflow-Pläne machen sichtbar, welche Abläufe zuerst
+            automatisiert werden sollten.
           </p>
         </article>
       </div>
@@ -354,11 +367,11 @@
 
     <section class="cta-section" id="contact">
       <div>
-        <p class="eyebrow">Portfolio Project</p>
-        <h2>Built By Heaviside Solutions</h2>
+        <p class="eyebrow">Portfolio-Projekt</p>
+        <h2>Entwickelt von Heaviside Solutions</h2>
         <p>
-          This demo project was created to showcase workflow automation thinking,
-          interactive frontend logic and modern software-style interface design.
+          Dieses Demo-Projekt wurde erstellt, um Automatisierungslogik,
+          interaktive Frontend-Funktionen und modernes Software-Interface-Design zu zeigen.
         </p>
       </div>
 
@@ -368,7 +381,7 @@
         rel="noopener noreferrer"
         class="btn primary"
       >
-        Visit Heaviside Solutions
+        Heaviside Solutions besuchen
       </a>
     </section>
 
@@ -381,7 +394,7 @@
     </div>
 
     <div>
-      <p>Created by Christopher Heaviside</p>
+      <p>Erstellt von Christopher Heaviside</p>
       <p>Heaviside Solutions</p>
     </div>
   </footer>
@@ -389,5 +402,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
