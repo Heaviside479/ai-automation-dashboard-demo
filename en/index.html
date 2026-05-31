@@ -1,1 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FlowPilot AI | Workflow Generator Demo</title>
+
+  <meta
+    name="description"
+    content="FlowPilot AI is an interactive workflow generator demo that creates automation ideas, workflow steps and business efficiency suggestions."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="app-header">
+    <a href="index.html" class="brand">
+      <span class="brand-icon">⚡</span>
+      FlowPilot AI
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation">
+      ☰
+    </button>
+
+    <nav class="nav-links">
+      <a href="#generator">Generator</a>
+      <a href="#features">Features</a>
+      <a href="#examples">Examples</a>
+      <a href="#value">Business Value</a>
+      <a href="#contact" class="nav-cta">Heaviside Solutions</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">AI Workflow Generator Demo</p>
+
+        <h1>Turn Business Processes Into Automation Plans</h1>
+
+        <p class="hero-text">
+          FlowPilot AI helps users transform repetitive business tasks into clear
+          automation workflows. Enter your industry, process and goal — then generate
+          a structured automation concept instantly.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#generator" class="btn primary">Generate Workflow</a>
+          <a href="#examples" class="btn secondary">View Examples</a>
+        </div>
+
+        <div class="trust-row">
+          <span>Workflow Logic</span>
+          <span>Business Automation</span>
+          <span>AI Concept Demo</span>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="panel-header">
+          <div>
+            <span class="status-dot"></span>
+            Generator Preview
+          </div>
+          <span class="panel-badge">Interactive</span>
+        </div>
+
+        <div class="preview-flow">
+          <div class="preview-step active">
+            <span>01</span>
+            <p>Analyze business process</p>
+          </div>
+
+          <div class="preview-step">
+            <span>02</span>
+            <p>Identify repetitive tasks</p>
+          </div>
+
+          <div class="preview-step">
+            <span>03</span>
+            <p>Create automation workflow</p>
+          </div>
+
+          <div class="preview-step">
+            <span>04</span>
+            <p>Estimate efficiency impact</p>
+          </div>
+        </div>
+
+        <div class="preview-metrics">
+          <div>
+            <strong>85%</strong>
+            <span>Automation Potential</span>
+          </div>
+
+          <div>
+            <strong>12h</strong>
+            <span>Weekly Time Saved</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div>
+        <strong>4</strong>
+        <span>Input Factors</span>
+      </div>
+
+      <div>
+        <strong>6+</strong>
+        <span>Generated Outputs</span>
+      </div>
+
+      <div>
+        <strong>100%</strong>
+        <span>Browser-Based Demo</span>
+      </div>
+    </section>
+
+    <section class="section" id="generator">
+      <div class="section-heading center">
+        <p class="eyebrow">Workflow Generator</p>
+        <h2>Create Your Automation Plan</h2>
+        <p>
+          Select your industry, choose a business process and describe your goal.
+          The generator will create a structured workflow concept for your automation idea.
+        </p>
+      </div>
+
+      <div class="generator-layout">
+        <form class="generator-form" id="workflowForm" onsubmit="return false;">
+          <div class="form-group">
+            <label for="industry">Industry</label>
+            <select id="industry" required>
+              <option value="">Choose an industry</option>
+              <option value="restaurant">Restaurant & Hospitality</option>
+              <option value="realestate">Real Estate</option>
+              <option value="consulting">Consulting</option>
+              <option value="ecommerce">E-Commerce</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="construction">Construction</option>
+              <option value="general">General Business</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="process">Business Process</label>
+            <select id="process" required>
+              <option value="">Choose a process</option>
+              <option value="lead-management">Lead Management</option>
+              <option value="customer-support">Customer Support</option>
+              <option value="document-processing">Document Processing</option>
+              <option value="appointment-booking">Appointment Booking</option>
+              <option value="reporting">Reporting</option>
+              <option value="email-workflows">Email Workflows</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="goal">Main Goal</label>
+            <select id="goal" required>
+              <option value="">Choose a goal</option>
+              <option value="save-time">Save Time</option>
+              <option value="reduce-errors">Reduce Errors</option>
+              <option value="faster-response">Respond Faster</option>
+              <option value="improve-overview">Improve Overview</option>
+              <option value="scale-operations">Scale Operations</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="details">Additional Details</label>
+            <textarea
+              id="details"
+              placeholder="Example: We receive many customer requests by email and want to answer faster."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn primary">
+            Generate Automation Plan
+          </button>
+        </form>
+
+        <div class="result-panel" id="resultPanel">
+          <div class="empty-state" id="emptyState">
+            <span>⚡</span>
+            <h3>Your workflow plan will appear here</h3>
+            <p>
+              Fill out the form and generate an automation concept based on your business process.
+            </p>
+          </div>
+
+          <div class="generated-result hidden" id="generatedResult">
+            <div class="result-header">
+              <div>
+                <p class="eyebrow">Generated Plan</p>
+                <h3 id="resultTitle">Automation Workflow</h3>
+              </div>
+
+              <span class="score-badge" id="automationScore">85%</span>
+            </div>
+
+            <div class="result-grid">
+              <div class="result-card">
+                <span>Estimated Time Saved</span>
+                <strong id="timeSaved">12h / week</strong>
+              </div>
+
+              <div class="result-card">
+                <span>Complexity</span>
+                <strong id="complexity">Medium</strong>
+              </div>
+            </div>
+
+            <div class="workflow-output">
+              <h4>Recommended Workflow</h4>
+              <ol id="workflowSteps"></ol>
+            </div>
+
+            <div class="tools-output">
+              <h4>Suggested Tools</h4>
+              <div class="tool-tags" id="toolTags"></div>
+            </div>
+
+            <div class="benefits-output">
+              <h4>Business Benefits</h4>
+              <ul id="benefitList"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="features">
+      <div class="section-heading center">
+        <p class="eyebrow">Features</p>
+        <h2>What This Demo Shows</h2>
+        <p>
+          This project demonstrates how a real AI automation tool could guide
+          users from business problem to automation concept.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span>🧠</span>
+          <h3>Process Understanding</h3>
+          <p>
+            The app analyzes selected inputs and creates a logical automation structure.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <span>⚙️</span>
+          <h3>Workflow Generation</h3>
+          <p>
+            Users receive clear step-by-step workflows based on their selected business process.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <span>📊</span>
+          <h3>Impact Estimation</h3>
+          <p>
+            The tool calculates estimated time savings, complexity and automation potential.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <span>🛠️</span>
+          <h3>Tool Suggestions</h3>
+          <p>
+            Suggested tools help users understand what technologies could be used.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="examples">
+      <div class="section-heading">
+        <p class="eyebrow">Example Use Cases</p>
+        <h2>Automation Ideas For Different Businesses</h2>
+        <p>
+          FlowPilot AI can generate ideas for many business situations where repetitive
+          work slows teams down.
+        </p>
+      </div>
+
+      <div class="example-grid">
+        <article class="example-card">
+          <span>🏠</span>
+          <h3>Real Estate Lead Handling</h3>
+          <p>
+            Automatically categorize property inquiries, collect missing details and prepare follow-up emails.
+          </p>
+        </article>
+
+        <article class="example-card">
+          <span>🍽️</span>
+          <h3>Restaurant Booking Requests</h3>
+          <p>
+            Sort reservation requests, confirm availability and send structured responses automatically.
+          </p>
+        </article>
+
+        <article class="example-card">
+          <span>📄</span>
+          <h3>Document Processing</h3>
+          <p>
+            Extract relevant information from files, summarize content and prepare internal reports.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section dark" id="value">
+      <div class="section-heading center">
+        <p class="eyebrow">Business Value</p>
+        <h2>Why Workflow Automation Matters</h2>
+      </div>
+
+      <div class="value-grid">
+        <article class="value-card">
+          <strong>01</strong>
+          <h3>Less Manual Work</h3>
+          <p>
+            Repetitive tasks can be automated so teams spend more time on valuable work.
+          </p>
+        </article>
+
+        <article class="value-card">
+          <strong>02</strong>
+          <h3>Faster Response Times</h3>
+          <p>
+            Automated workflows help businesses react faster to customers, leads and internal requests.
+          </p>
+        </article>
+
+        <article class="value-card">
+          <strong>03</strong>
+          <h3>Better Process Clarity</h3>
+          <p>
+            Clear workflow plans make it easier to understand what should be automated first.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div>
+        <p class="eyebrow">Portfolio Project</p>
+        <h2>Built By Heaviside Solutions</h2>
+        <p>
+          This demo project was created to showcase workflow automation thinking,
+          interactive frontend logic and modern software-style interface design.
+        </p>
+      </div>
+
+      <a
+        href="https://heaviside-solutions.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn primary"
+      >
+        Visit Heaviside Solutions
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>FlowPilot AI</strong>
+      <p>Workflow Generator Demo</p>
+    </div>
+
+    <div>
+      <p>Created by Christopher Heaviside</p>
+      <p>Heaviside Solutions</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
 
