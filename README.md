@@ -14,6 +14,10 @@ Created as a portfolio project by **Heaviside Solutions**.
 
 ### Website
 
+https://heaviside-solutions.com
+
+### Website
+
 https://heaviside479.github.io/ai-automation-dashboard-demo/
 
 ---
