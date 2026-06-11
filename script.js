@@ -19,6 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
     benefitList: document.getElementById("benefitList"),
   };
 
+    const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  }
+
   const storageKey = "flowpilot_workflow_demo";
 
   const workflowLibrary = {
