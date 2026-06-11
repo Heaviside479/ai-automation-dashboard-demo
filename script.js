@@ -286,4 +286,59 @@ document.addEventListener("DOMContentLoaded", () => {
     saveState(data);
     generateWorkflow(data);
   });
+
+  if (copyWorkflowBtn) {
+  copyWorkflowBtn.addEventListener("click", async () => {
+    try {
+      const title = elements.resultTitle?.textContent || "";
+      const score = elements.automationScore?.textContent || "";
+      const time = elements.timeSaved?.textContent || "";
+      const complexityLevel = elements.complexity?.textContent || "";
+
+      const steps = Array.from(
+        document.querySelectorAll("#workflowSteps li")
+      )
+        .map((li) => `• ${li.textContent}`)
+        .join("\n");
+
+      const benefits = Array.from(
+        document.querySelectorAll("#benefitList li")
+      )
+        .map((li) => `• ${li.textContent}`)
+        .join("\n");
+
+      const text = `
+${title}
+
+Automatisierungspotenzial: ${score}
+Zeitersparnis: ${time}
+Komplexität: ${complexityLevel}
+
+Workflow:
+${steps}
+
+Nutzen:
+${benefits}
+      `.trim();
+
+      await navigator.clipboard.writeText(text);
+
+      if (copyStatus) {
+        copyStatus.textContent = "✓ Workflow kopiert";
+      }
+
+      setTimeout(() => {
+        if (copyStatus) {
+          copyStatus.textContent = "";
+        }
+      }, 3000);
+    } catch (error) {
+      console.error(error);
+
+      if (copyStatus) {
+        copyStatus.textContent = "Kopieren fehlgeschlagen";
+      }
+    }
+  });
+}
 });
