@@ -28,6 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const copyWorkflowBtn = document.getElementById("copyWorkflowBtn");
+  const copyStatus = document.getElementById("copyStatus");
+  
   const storageKey = "flowpilot_workflow_demo";
 
   const workflowLibrary = {
